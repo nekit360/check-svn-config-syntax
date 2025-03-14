@@ -2,16 +2,18 @@
 
 # Check the first line in block
 check_block_line1() {
-    [[ "$1" =~ ^\[([a-zA-Z0-9_:\/]*[a-zA-Z0-9]|[a-zA-Z0-9_:\/]*:\/)\]$ ]] && [[ ! "$1" =~ \/$ ]] 
+    [[ "$1" =~ ^\[([a-zA-Z0-9_:\/*]*[a-zA-Z0-9]|[a-zA-Z0-9_:\/]*:\/)\]$ ]] && [[ ! "$1" =~ \/$ ]] 
 }
 
 # Check the second line in block
 check_block_line2() {
-    [[ "$1" =~ ^@svn_prj_rw_[a-zA-Z0-9_]+\ =\ rw$ ]] }
+    [[ "$1" =~ ^@svn_prj_rw_[a-zA-Z0-9_]+\ =\ rw$ ]] 
+}
 
 # Check the third line in block
 check_block_line3() {
-    [[ "$1" =~ ^@svn_prj_ro_[a-zA-Z0-9_]+\ =\ r$ ]] }
+    [[ "$1" =~ ^@svn_prj_ro_[a-zA-Z0-9_]+\ =\ r$ ]] 
+}
 
 # Check the fourth line in block
 check_block_line4() {
