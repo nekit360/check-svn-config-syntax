@@ -17,7 +17,8 @@ check_block_line3() {
 
 # Check the fourth line in block
 check_block_line4() {
-    [[ "$1" =~ ^\*\ =\ (rw|r)?$ ]] || [[ "$1" =~ ^\*\ =$ ]] || [[ -z "$1" ]] }
+    [[ "$1" =~ ^\*\ =\ (rw|r)?$ ]] || [[ "$1" =~ ^\*\ =$ ]] || [[ -z "$1" ]] 
+}
 
 # Validate a file
 check_file() {
